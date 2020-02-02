@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/ID_calculation_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="4dp"
+                android:textSize="32sp"
+                tools:text="34X2"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/ID_calculation_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:textSize="34sp"
+                android:padding="8dp"
+                tools:text="64"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/ID_calculation_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <GridLayout
+            android:layout_weight="75"
+            android:id="@+id/ID_numbers_gridview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/ID_7"
+                style="@style/calcuationButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/ID_8"
+                style="@style/calcuationButton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/ID_9"
+                style="@style/calcuationButton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/ID_4"
+                style="@style/calcuationButton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/ID_5"
+                style="@style/calcuationButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/ID_6"
+                style="@style/calcuationButton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/ID_1"
+                style="@style/calcuationButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/ID_2"
+                style="@style/calcuationButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/ID_3"
+                style="@style/calcuationButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/ID_0"
+                style="@style/calcuationButton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/ID_dot"
+                style="@style/calcuationButton"
+                android:text="." />
+
+            <Button
+                android:id="@+id/ID_equal"
+                style="@style/calcuationButton"
+                android:text="=" />
+
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_weight="30"
+            android:id="@+id/ID_equations_gridview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="4">
+
+
+            <ImageButton
+                android:padding="24dp"
+                android:id="@+id/ID_remove_IMAGEBTN"
+                style="@style/equationButton"
+                android:src="@drawable/ic_eraser">
+
+            </ImageButton>
+
+            <Button
+                android:id="@+id/ID_divide"
+                style="@style/equationButton"
+                android:text="÷" />
+
+            <Button
+                android:id="@+id/ID_x"
+                style="@style/equationButton"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/ID_minus"
+                style="@style/equationButton"
+                android:text="-" />
+
+
+            <Button
+                android:id="@+id/ID_plus"
+                style="@style/equationButton"
+                android:text="+" />
+
+
+        </GridLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
